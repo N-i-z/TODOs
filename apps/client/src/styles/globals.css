@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  /* Colors */
+  --background: #f5efe6;
+  --background-contrast: #f5efe6;
+  --background-container: #fffffc;
+  --foreground: #000f2c;
+  --foreground-muted: #555770;
+  --border: #c7cccf;
+  --border-muted: #dfe7ed;
+  --primary: #a7c0ce;
+  --primary-hover: #88adc2;
+  --primary-active: #7ab2d3;
+  --primary-muted: #c3ccd1;
+  --danger: #d66a6a;
+  --danger-hover: #c85b5b;
+  --danger-active: #b44a4a;
+  --danger-muted: #f0c7c7;
+  --success: #5fa777;
+  --success-muted: #e6f4ea;
+  --success-hover: #4e8f66;
+  --success-active: #3d7554;
+  --warning: #d6a354;
+  --warning-muted: #fbf1df;
+  --warning-hover: #c58e3e;
+  --warning-active: #a77227;
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(167, 192, 206, 0.45);
+
+  /* Font sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+
+  /* Line heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Font weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000f2c;
+    --foreground: #fffffc;
+    --background-container: #0b1a3a;
+    --foreground-muted: #cfd8e3;
+    --border: #22345a;
+    --border-muted: #2f456f;
+    --primary: #a7c0ce;
+    --primary-hover: #88adc2;
+    --primary-active: #7ab2d3;
+    --primary-muted: #c3ccd1;
+    --danger: #d66a6a;
+    --danger-hover: #c85b5b;
+    --danger-active: #b44a4a;
+    --danger-muted: #f0c7c7;
+    --success: #5fa777;
+    --success-muted: #e6f4ea;
+    --success-hover: #4e8f66;
+    --success-active: #3d7554;
+    --warning: #d6a354;
+    --warning-muted: #fbf1df;
+    --warning-hover: #c58e3e;
+    --warning-active: #a77227;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
