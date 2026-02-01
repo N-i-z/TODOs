@@ -1,0 +1,25 @@
+{
+  "name": "todos-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "dev": "pnpm -C apps/client dev & pnpm -C apps/server start:dev",
+    "dev:client": "pnpm -C apps/client dev",
+    "build:client": "pnpm -C apps/client build",
+    "dev:server": "pnpm -C apps/server start:dev",
+    "build:server": "pnpm -C apps/server build",
+    "build:ui": "pnpm -C packages/ui build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "trustedDependencies": [
+    "@prisma/client",
+    "prisma",
+    "@prisma/engines"
+  ],
+  "dependencies": {
+    "@nestjs/cli": "^11.0.16"
+  }
+}
